@@ -1,16 +1,28 @@
 modbus-cli
+==========
+
 A simple application to send Modbus commands from the CLI
 
-License
-This sources is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
 
-You should have received a copy of the GNU Lesser General Public License along with this script; if not, please visit http://www.gnu.org/copyleft/gpl.html for more information.
+License
+=======
+
+This sources is free software; you can redistribute it and/or modify it under the terms of
+the GNU Lesser General Public License as published by the Free Software Foundation;
+either version 2.1 of the License, or (at your option) any later version.
+
+You should have received a copy of the GNU Lesser General Public License along with this
+script; if not, please visit http://www.gnu.org/copyleft/gpl.html for more information.
+
 
 Usage
-This package provides a command line interface to send Modbus requests. It supports both Modbus RTU and Modbus TCP modes. It depends on the excellent library libmodbus for C.
+=====
 
-Once installed, it is possible to check its options and usage examples by executing modbus-cli -h:
+This package provides a command line interface to send Modbus requests. It supports both Modbus RTU and Modbus TCP modes. It depends on the excellent library [libmodbus](http://libmodbus.org/) for C.
 
+Once installed, it is possible to check its options and usage examples by executing `modbus-cli -h`:
+
+```
 Usage: modbus-cli [options...]
 Examples:
 	 modbus-cli -r -d /dev/ttyS1 -b 9600 -f 4 -s 1 -a 0 -n 20
@@ -31,7 +43,12 @@ Options: (R) means Modbus RTU, (T) means Modbus TCP
  -a,	 Define the start address
  -n,	 Define the number of registers (for -f = 3 or 4)
  -v,	 Define the value to write TRUE or FALSE for (for -f = 5 or 6)
-More info for use modbus-cli on OpenWRT routers you can see here (Russian)
+```
+
+More info for use modbus-cli on OpenWRT routers you can see [here (Russian)](http://zftlab.org)
+
 
 Links
-Original idea and sources from Maestro Wireless Solutions
+=====
+
+* [Original idea and sources from Maestro Wireless Solutions](https://dev.maestro-wireless.eu/kb/modbus-cli-package/)
